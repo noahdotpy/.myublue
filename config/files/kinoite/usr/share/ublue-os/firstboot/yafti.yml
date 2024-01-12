@@ -1,7 +1,6 @@
 title: Welcome to uBlue
 properties:
-  mode: "run-once"
-  save_state: "always"
+  mode: "run-on-change"
 screens:
   first-screen:
     source: yafti.screen.title
