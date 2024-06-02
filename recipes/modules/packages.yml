@@ -1,0 +1,9 @@
+# https://blue-build.org/reference/modules/rpm-ostree/
+type: rpm-ostree
+install:
+  - ImageMagick
+  - chromium
+  - cryfs
+  - lzip
+  - waydroid
+  - zsh

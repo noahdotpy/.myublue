@@ -22,14 +22,21 @@ jobs:
       fail-fast: false # stop GH from cancelling all matrix builds if one fails
       matrix:
         recipe:
-          # !! Add your recipes here 
+          # !! Add your recipes here
           - bazzite-gnome.yml
-          - bluefin-gts.yml
-          - bluefin-latest.yml
+          - bazzite-plasma.yml
+          - bluefin-gnome-dx-gts.yml
+          - bluefin-gnome-dx-latest.yml
+          - bluefin-gnome-gts.yml
+          - bluefin-gnome-latest.yml
+          - bluefin-plasma-dx-gts.yml
+          - bluefin-plasma-dx-latest.yml
+          - bluefin-plasma-gts.yml
+          - bluefin-plasma-latest.yml
     steps:
        # the build is fully handled by the reusable github action
       - name: Build Custom Image
-        uses: blue-build/github-action@v1.1.0
+        uses: blue-build/github-action@v1.5
         with:
           recipe: ${{ matrix.recipe }}
           cosign_private_key: ${{ secrets.SIGNING_SECRET }}
