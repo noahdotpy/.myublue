@@ -18,6 +18,7 @@ if [[ ${#ADD_FILES[@]} -gt 0 ]]; then
 		fi
 
 		echo "Copying $entry to /usr/share/ublue-os/image-pinned-etcs"
+		echo "config-directory: $CONFIG_DIRECTORY"
 		cp -rf $CONFIG_DIRECTORY/image-pinned-etcs/$entry/* /usr/share/ublue-os/image-pinned-etcs/
 		DIRS_TO_CREATE=($(fd --type directory --base-directory $CONFIG_DIRECTORY/image-pinned-etcs/$entry | xargs))
 		FILES_TO_LINK=($(fd --type file --base-directory $CONFIG_DIRECTORY/image-pinned-etcs/$entry | xargs))
