@@ -10,7 +10,7 @@ mkdir -p /usr/share/ublue-os/image-pinned-etcs/
 if [[ ${#ADD_FILES[@]} -gt 0 ]]; then
 	cd "$CONFIG_DIRECTORY/image-pinned-etcs"
 
-	tree .
+	tree . -f
 
 	echo "Adding files to image-pinned-etcs"
 	for entry in "${ADD_FILES[@]}"; do
