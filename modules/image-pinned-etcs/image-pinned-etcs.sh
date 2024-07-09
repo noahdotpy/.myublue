@@ -36,6 +36,9 @@ if [[ ${#ADD_FILES[@]} -gt 0 ]]; then
 		done
 
 		for file in "${FILES_TO_LINK[@]}"; do
+			if [ -e /usr/etc/$file ]; then
+				rm /usr/etc/$file
+			fi
 			echo "linking this thing /usr/share/ublue-os/image-pinned-etcs/$file /usr/etc/$file"
 			ln -s /usr/share/ublue-os/image-pinned-etcs/$file /usr/etc/$file
 			# TODO: for some reason there is already aurora-fastfetch.sh and its trying to make it again
