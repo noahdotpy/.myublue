@@ -10,10 +10,13 @@ mkdir -p /usr/share/ublue-os/image-pinned-etcs/
 if [[ ${#ADD_FILES[@]} -gt 0 ]]; then
 	cd "$CONFIG_DIRECTORY/image-pinned-etcs"
 
+	echo "$CONFIG_DIRECTORY/image-pinned-etcs"
 	tree . -f
 
 	echo "Adding files to image-pinned-etcs"
 	for entry in "${ADD_FILES[@]}"; do
+		echo "$CONFIG_DIRECTORY/image-pinned-etcs/$entry"
+		tree $CONFIG_DIRECTORY/image-pinned-etcs/$entry -f
 		if [ ! -e "$CONFIG_DIRECTORY/image-pinned-etcs/$entry" ]; then
 			echo "Entry $entry Does Not Exist in $CONFIG_DIRECTORY/image-pinned-etcs"
 			exit 1
