@@ -24,7 +24,6 @@ if [[ ${#ADD_FILES[@]} -gt 0 ]]; then
 
 		for dir in "${DIRS_TO_CREATE[@]}"; do
 			mkdir -p /usr/etc/$dir
-			ls -ahl /usr/etc/$dir
 		done
 
 		for file in "${FILES_TO_LINK[@]}"; do
