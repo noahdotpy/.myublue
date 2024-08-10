@@ -55,7 +55,7 @@ if [[ ${#ADD_HOMEFILES[@]} -gt 0 ]]; then
 	for entry in "${ADD_HOMEFILES[@]}"; do
 		cp -r $CONFIG_DIRECTORY/homefiles/$entry /usr/share/bluebuild/homefiles/$entry
 
-		chezmoi apply --destination /usr/etc/skel/ --source /usr/share/bluebuild/homefiles/$entry --force
+		chezmoi apply --destination /etc/skel/ --source /usr/share/bluebuild/homefiles/$entry --force
 	done
 else
 	echo "There are no homefiles directories added."
