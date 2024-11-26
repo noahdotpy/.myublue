@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.3.0](https://github.com/noahdotpy/myfedora/compare/v2.2.0...v2.3.0) (2024-11-26)
+
+
+### Features
+
+* deprecate modules/homefiles ([6dce6b3](https://github.com/noahdotpy/myfedora/commit/6dce6b36fe904cbdc7291647fe4acd8cac0575b0))
+* update gschema-overrides gnome settings to match mine ([b8607e8](https://github.com/noahdotpy/myfedora/commit/b8607e84b6c90c561bb825249fc96f956965237d))
+
+
+### Bug Fixes
+
+* fastfetch-image-info.nu is now executable, remove profile.d/ssh_auth_gcr.sh ([8601c76](https://github.com/noahdotpy/myfedora/commit/8601c766090a7f23c6a458478bb6eeb4e7cf2095))
+
 ## [2.2.0](https://github.com/noahdotpy/myfedora/compare/v2.1.0...v2.2.0) (2024-11-25)
 
 
