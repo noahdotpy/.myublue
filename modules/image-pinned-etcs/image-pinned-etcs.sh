@@ -10,7 +10,7 @@ else
 	rpm-ostree install fd-find
 fi
 
-get_yaml_array ADD_FILES '.add[]' "$1"
+get_json_array ADD_FILES 'try .["add"][]' "$1"
 
 mkdir -p /usr/share/bluebuild/image-pinned-etcs/
 
