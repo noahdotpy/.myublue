@@ -1,0 +1,9 @@
+name: myfedora/kova
+description: noahdotpy-ified image of the Kinoite image from Fedora
+alt-tags: [41-git-no-rechunk]
+
+base-image: quay.io/fedora-ostree-desktops/kinoite
+image-version: 41
+
+modules:
+  - from-file: image-modules/kova.yml

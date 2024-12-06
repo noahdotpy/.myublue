@@ -14,8 +14,7 @@ For info on how to create your own, check out the [BlueBuild website](https://bl
 - [noahdotpy/myfedora](#noahdotpymyfedora)
   - [Table of contents](#table-of-contents)
   - [Images](#images)
-    - [Channels](#channels)
-    - [Frequencies](#frequencies)
+    - [Tags](#tags)
   - [Installation](#installation)
     - [ISO (recommended)](#iso-recommended)
     - [Switching from a Fedora Atomic image](#switching-from-a-fedora-atomic-image)
@@ -34,6 +33,8 @@ started at 4:30AM every Sunday (UTC), but you can add `-git` to your image ref
 tag to get additional builds when a git commit is pushed to the default branch
 of this repo. An example tag is `41-git`, which is based on Fedora 41 but gets
 additional updates on every git commit instead of only weekly.
+
+There is a tag called `{version}-git-no-rechunk` which is the exact same as `-git` but builds way faster, at the cost of the user's upgrade size increasing.
 
 ## Installation
 
