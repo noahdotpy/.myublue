@@ -21,27 +21,33 @@ For info on how to create your own, check out the [BlueBuild website](https://bl
 
 ## Images
 
-The images this repository offers are `kova` (Kinoite), `silvara` (Silverblue), and `horizon` (Hyprland).
+Images are built weekly, or on other conditions specified by the tag (an example being: on git pushes). The weekly builds are scheduled to be built at 4:30AM every Sunday (UTC)
+
+| Desktop Environment | Base Image           | Image Name |
+| ------------------- | -------------------- | ---------- |
+| KDE Plasma          | Kinoite by Fedora    | Kova       |
+| GNOME               | Silverblue by Fedora | Silvara    |
+| Hyprland            | Hyprland by Wayblue  | Horizon    |
 
 ### Tags
 
-Tags are based on the Fedora version it is based on. An example tag is `41`,
-which is based on Fedora 41.
+| Example tag         | Build on git pushes? | Uses rechunk? |
+| ------------------- | -------------------- | ------------- |
+| `41`                | ❌                   | ✔️            |
+| `41-git`            | ✔️                   | ✔️            |
+| `41-git-no-rechunk` | ✔️                   | ❌            |
 
-If you only use the Fedora version as your tag then you will get weekly builds
-started at 4:30AM every Sunday (UTC), but you can add `-git` to your image ref
-tag to get additional builds when a git commit is pushed to the default branch
-of this repo. An example tag is `41-git`, which is based on Fedora 41 but gets
-additional updates on every git commit instead of only weekly.
+Tags always start with the Fedora version you want to use (eg: `41` for Fedora 41). You then add the tag suffix provided from the above table (eg: `41-git`), or leave it with just the version to only get builds every week (eg: `41`).
 
-There is a tag called `{version}-git-no-rechunk` which is the exact same as `-git` but builds way faster, at the cost of the user's upgrade size increasing.
+If rechunk is used to build the image then the resulting image upgrade size for the user will be substantially smaller, but the build time will be massively increased.
 
+> **Warning**: You very likely don't want to use a `no-rechunk` image directly. This tag is mostly so the maintainer of these images can determine quicker if the builds failed.
+> 
 ## Installation
 
 The image reference format for any image in this repo is `ghcr.io/noahdotpy/myfedora/{image}:{tag}`.
 
-For example, if you want Silvara on Fedora 41 and image builds weekly and on git
-pushes then you would want the following tag:
+For example, if you want Silvara on Fedora 41 and image builds weekly or on git pushes then you would want the following tag:
 `ghcr.io/noahdotpy/myfedora/silvara:41-git`.
 
 ### ISO (recommended)
