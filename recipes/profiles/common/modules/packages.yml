@@ -30,6 +30,10 @@ install:
   - cryfs
   - cryfs
   - devpod
+  - docker-ce
+  - docker-ce-cli
+  - docker-buildx-plugin
+  - docker-compose-plugin
   - direnv
   - distrobox
   - duf
@@ -64,6 +68,8 @@ install:
   - neovim
   - nerd-fonts
   - patch
+  - podman-compose
+  - podman-machine
   - piper
   - playerctl
   - printer-driver-brlaser
