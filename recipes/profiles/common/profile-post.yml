@@ -6,4 +6,5 @@ modules:
       - rm /etc/os-release; ln -s /usr/lib/os-release /etc/os-release
 
   - type: update-image-info
+    source: local
   - type: signing

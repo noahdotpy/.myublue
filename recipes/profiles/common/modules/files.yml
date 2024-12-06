@@ -4,6 +4,7 @@ modules:
     - source: system/common/
       destination: /
 - type: remove-files
+  source: local
   files:
     - /usr/share/sounds/Yaru/stereo/desktop-login.oga
     - /usr/share/sounds/Yaru/stereo/desktop-logoff.oga
