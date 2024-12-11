@@ -4,4 +4,4 @@ modules:
       - jq-devel
   - type: containerfile
     snippets:
-      - COPY --from=ghcr.io/noahdotpy/idwt-rs:git /out/bin/idwt /usr/bin/idwt-rs
+      - COPY --from=ghcr.io/noahdotpy/idwt:git /out/bin/idwt /usr/bin/idwt

@@ -13,7 +13,7 @@ system:
     - rpm-ostreed-automatic.timer
 user:
   enabled:
-    - idwt-user.path
-    - idwt-user.service
-    - idwt-user.timer
+    # - idwt-user.path
+    # - idwt-user.service
+    # - idwt-user.timer
     - notify-big-uptime.timer
