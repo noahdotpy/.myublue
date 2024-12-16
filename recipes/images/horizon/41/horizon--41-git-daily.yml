@@ -1,6 +1,6 @@
 name: myfedora/horizon
 description: noahdotpy-ified image of the Hyprland image from Wayblue
-alt-tags: [41-git-no-rechunk]
+alt-tags: [41-git-daily]
 
 base-image: ghcr.io/wayblueorg/hyprland
 image-version: 41

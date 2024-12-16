@@ -1,8 +1,8 @@
-name: "Build (git + no-rechunk)"
+name: "Build (git + daily + no rechunk)"
 
 on:
   schedule:
-    - cron: "30 04 * * 0" # 04:30 UTC every Sunday
+    - cron: "30 04 * * *" # 04:30 UTC everyday
   push:
     paths:
       - "files/**"
@@ -28,9 +28,9 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - images/horizon/41/horizon--41-git-no-rechunk.yml
-          - images/kova/41/kova--41-git-no-rechunk.yml
-          - images/silvara/41/silvara--41-git-no-rechunk.yml
+          - images/horizon/41/horizon--41-git-daily.yml
+          - images/kova/41/kova--41-git-daily.yml
+          - images/silvara/41/silvara--41-git-daily.yml
 
     steps:
       - name: Build Custom Image

@@ -21,7 +21,7 @@ For info on how to create your own, check out the [BlueBuild website](https://bl
 
 ## Images
 
-Images are built weekly, or on other conditions specified by the tag (an example being: on git pushes). The weekly builds are scheduled to be built at 4:30AM every Sunday (UTC)
+The images are built weekly (or daily with `-git-daily` tag), or on other conditions specified by the tag (an example being: on git pushes). The builds are scheduled to be built at 4:30AM every Sunday for the weekly tags, or everyday for the daily tags (timezone is UTC).
 
 | Desktop Environment | Base Image           | Image Name |
 | ------------------- | -------------------- | ---------- |
@@ -31,18 +31,16 @@ Images are built weekly, or on other conditions specified by the tag (an example
 
 ### Tags
 
-| Example tag         | Build on git pushes? | Uses rechunk? |
-| ------------------- | -------------------- | ------------- |
-| `41`                | ❌                   | ✔️            |
-| `41-git`            | ✔️                   | ✔️            |
-| `41-git-no-rechunk` | ✔️                   | ❌            |
+| Example tag         | Build on git pushes? | Build Frequency | Uses rechunk? (see below at *) |
+| ------------------- | -------------------- | --------------- | ------------------------------ |
+| `41`                | ❌                    | Weekly          | ✔️                             |
+| `41-git`            | ✔️                   | Weekly          | ✔️                             |
+| `41-git-daily`      | ✔️                   | Daily           | ❌                              |
 
 Tags always start with the Fedora version you want to use (eg: `41` for Fedora 41). You then add the tag suffix provided from the above table (eg: `41-git`), or leave it with just the version to only get builds every week (eg: `41`).
 
-If rechunk is used to build the image then the resulting image upgrade size for the user will be substantially smaller, but the build time will be massively increased.
+\* If rechunk is used to build the image then the resulting image upgrade size for the user will be substantially smaller, but the build time will be massively increased.
 
-> **Warning**: You very likely don't want to use a `no-rechunk` image directly. This tag is mostly so the maintainer of these images can determine quicker if the builds failed.
-> 
 ## Installation
 
 The image reference format for any image in this repo is `ghcr.io/noahdotpy/myfedora/{image}:{tag}`.
