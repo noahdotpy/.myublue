@@ -19,10 +19,11 @@ def "is_property_populated" [
 
 def main [
     recipe: string,
-    --module-directory: string
-    --config-directory: string
 ] {
     let recipe = echo $recipe | from json
+
+    let config_directory = $env.CONFIG_DIRECTORY
+    let module_directory = $env.MODULE_DIRECTORY
     
     let recipe = $recipe | default false disable-service
 
