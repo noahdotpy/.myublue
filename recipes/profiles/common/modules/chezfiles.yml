@@ -1,3 +1,6 @@
-type: chezfiles
-source: local
-user: [common/user]
+modules:
+  - type: rpm-ostree
+    install: [chezmoi]
+  - type: chezfiles
+    source: local
+    user: [common/user]

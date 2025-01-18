@@ -24,6 +24,8 @@ def main [
 
     let config_directory = $env.CONFIG_DIRECTORY
     let module_directory = $env.MODULE_DIRECTORY
+
+    
     
     let recipe = $recipe | default false disable-service
 

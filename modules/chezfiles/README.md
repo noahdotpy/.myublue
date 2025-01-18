@@ -1,5 +1,7 @@
 # `chezfiles`
 
+WARNING: This module requires chezmoi to be installed BEFORE the module is ran
+
 ```yaml
 - type: chezfiles
   disable-service: false # (default: false), put true if you want the systemd services not to be enabled by default
