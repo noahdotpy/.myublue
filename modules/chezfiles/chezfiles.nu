@@ -1,3 +1,5 @@
+#!/usr/bin/env nu
+
 def "is_property_defined" [
     record: record,
     property: cell-path,
