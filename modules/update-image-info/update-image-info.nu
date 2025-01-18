@@ -1,6 +1,8 @@
 #!/usr/bin/env nu
 
-def main [] {
+def main [
+    recipe: string
+] {
     let file_path = "/usr/share/bluebuild/image-info.json"
     let image_vendor = "noahdotpy"
 
