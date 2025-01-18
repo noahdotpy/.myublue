@@ -18,7 +18,7 @@ def "is_property_populated" [
 }
 
 def main [
-    --recipe: string,
+    recipe: string,
     --module-directory: string
     --config-directory: string
 ] {
