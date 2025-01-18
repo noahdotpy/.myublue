@@ -28,7 +28,7 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          - images/horizon/41/horizon--41-git-daily.yml
+          # - images/horizon/41/horizon--41-git-daily.yml
           - images/kova/41/kova--41-git-daily.yml
           - images/silvara/41/silvara--41-git-daily.yml
 
