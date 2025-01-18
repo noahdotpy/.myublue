@@ -1,11 +1,11 @@
 #!/usr/bin/env nu
 
-def main [
-    image_name: string
-    base_image: string
-] {
+def main [] {
     let file_path = "/usr/share/bluebuild/image-info.json"
     let image_vendor = "noahdotpy"
+
+    let image_name = $env.IMAGE_NAME
+    let base_image = $env.BASE_IMAGE
     
     let config = try { open $file_path } | default {}
 
