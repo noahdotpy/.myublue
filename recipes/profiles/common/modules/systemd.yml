@@ -8,6 +8,9 @@ system:
     - idwt-system.path
     - idwt-system.service
     - idwt-system.timer
+    - idwt-nu-system.path
+    - idwt-nu-system.service
+    - idwt-nu-system.timer
     - nushell-profile.d.path
     - nushell-profile.d.service
     - rpm-ostreed-automatic.timer
