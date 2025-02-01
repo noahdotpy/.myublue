@@ -25,9 +25,9 @@ The images are built weekly (or daily with `-git-daily` tag), or on other condit
 
 | Desktop Environment | Base Image           | Image Name |
 | ------------------- | -------------------- | ---------- |
-| KDE Plasma          | Kinoite by Fedora    | Kova       |
-| GNOME               | Silverblue by Fedora | Silvara    |
-| Hyprland            | Hyprland by Wayblue  | Horizon    |
+| KDE Plasma          | Kinoite by Fedora    | Plasma    |
+| GNOME               | Silverblue by Fedora | Gnome |
+| Hyprland            | Hyprland by Wayblue  | Hyprland   |
 
 ### Tags
 
@@ -45,23 +45,23 @@ Tags always start with the Fedora version you want to use (eg: `41` for Fedora 4
 
 The image reference format for any image in this repo is `ghcr.io/noahdotpy/myfedora/{image}:{tag}`.
 
-For example, if you want Silvara on Fedora 41 and image builds weekly or on git pushes then you would want the following tag:
-`ghcr.io/noahdotpy/myfedora/silvara:41-git`.
+For example, if you want Gnome Fedora 41 and image builds weekly or on git pushes then you would want the following tag:
+`ghcr.io/noahdotpy/myfedora/gnome:41-git`.
 
 ### ISO (recommended)
 
 This repository includes a justfile recipe to build ISOs locally from the GHCR registry.
 
-Below is an example of building an ISO for silvara:41-git
+Below is an example of building an ISO for gnome:41-git
 
 ```bash
-just build-iso-ghcr silvara:41-git
+just build-iso-ghcr gnome:41-git
 ```
 
 ### Switching from a Fedora Atomic image
 
-Below is an example of switching to silvara:41-git
+Below is an example of switching to gnome:41-git
 
-1. `bootc switch ghcr.io/noahdotpy/myfedora/silvara:41-git`
+1. `bootc switch ghcr.io/noahdotpy/myfedora/gnome:41-git`
 
 2. Reboot computer

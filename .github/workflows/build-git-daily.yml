@@ -28,9 +28,9 @@ jobs:
       fail-fast: false
       matrix:
         recipe:
-          # - images/horizon/41/horizon--41-git-daily.yml
-          - images/kova/41/kova--41-git-daily.yml
-          - images/silvara/41/silvara--41-git-daily.yml
+          # - images/hyprland/41/hyprland--41-git-daily.yml
+          - images/plasma/41/plasma--41-git-daily.yml
+          - images/gnome/41/gnome--41-git-daily.yml
 
     steps:
       - name: Build Custom Image
