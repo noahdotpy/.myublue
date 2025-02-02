@@ -86,6 +86,3 @@ install:
   - zellij
   - zoxide
   - zsh
-remove:
-  - firefox
-  - firefox-langpacks

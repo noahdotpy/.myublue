@@ -2,6 +2,7 @@ modules:
   - type: script
     scripts:
       - common-post/initramfs.sh
+      - common-post/remove-firefox-if-exists.sh
     snippets:
       - rm /etc/os-release; ln -s /usr/lib/os-release /etc/os-release
 
