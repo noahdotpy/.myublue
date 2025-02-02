@@ -1,5 +1,5 @@
 name: myfedora/gnome
-description: noahdotpy-ified image of the Silverblue image from Fedora
+description: Personalised image of the Silverblue image from Fedora
 alt-tags: [41-git-daily]
 
 base-image: quay.io/fedora-ostree-desktops/silverblue

@@ -1,5 +1,5 @@
 name: myfedora/hyprland
-description: noahdotpy-ified image of the Hyprland image from Wayblue
+description: Personalised image of the Hyprland image from Wayblue
 alt-tags: [41-git]
 
 base-image: ghcr.io/wayblueorg/hyprland

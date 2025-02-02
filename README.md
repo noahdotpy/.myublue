@@ -13,23 +13,17 @@ For info on how to create your own, check out the [BlueBuild website](https://bl
 
 - [noahdotpy/myfedora](#noahdotpymyfedora)
   - [Table of contents](#table-of-contents)
-  - [Images](#images)
-    - [Tags](#tags)
+  - [Image Build Schedules](#image-build-schedules)
+  - [Tags](#tags)
   - [Installation](#installation)
     - [ISO (recommended)](#iso-recommended)
     - [Switching from a Fedora Atomic image](#switching-from-a-fedora-atomic-image)
 
-## Images
+## Image Build Schedules
 
 The images are built weekly (or daily with `-git-daily` tag), or on other conditions specified by the tag (an example being: on git pushes). The builds are scheduled to be built at 4:30AM every Sunday for the weekly tags, or everyday for the daily tags (timezone is UTC).
 
-| Desktop Environment | Base Image           | Image Name |
-| ------------------- | -------------------- | ---------- |
-| KDE Plasma          | Kinoite by Fedora    | Plasma    |
-| GNOME               | Silverblue by Fedora | Gnome |
-| Hyprland            | Hyprland by Wayblue  | Hyprland   |
-
-### Tags
+## Tags
 
 | Example tag         | Build on git pushes? | Build Frequency | Uses rechunk? (see below at *) |
 | ------------------- | -------------------- | --------------- | ------------------------------ |
