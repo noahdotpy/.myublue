@@ -5,5 +5,5 @@ modules:
   - type: containerfile
     snippets:
       - COPY --from=ghcr.io/noahdotpy/idwt:git /out/bin/idwt /usr/bin/idwt
-      - COPY --from=ghcr.io/noahdotpy/idwt-nu:git /out /
+      - COPY --from=ghcr.io/noahdotpy/idwt-nu:main /out /
 
